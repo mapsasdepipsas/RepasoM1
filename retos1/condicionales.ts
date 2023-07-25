@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isEven = void 0;
 //2. Realizar una función que dada una fecha de nacimiento te devuelva el signo zodiacal.
 //La fecha de nacimiento vendrá indicada por dos números: dia y mes.
 //La cabecera de la función tendrá el siguiente aspecto: function zodiac(day, month)
-function zodiac(day, month) {
+function zodiac(day: number, month: string): string {
     if (month == "Enero" && day >= 20 || month == "Febrero" && day <= 18) {
         return "Acuario";
     }
@@ -42,51 +39,58 @@ function zodiac(day, month) {
         return "Capricornio";
     }
 }
-var day = 9;
-var month = "Agosto";
-var signozodiaco = zodiac(day, month);
+
+let day: number = 9;
+let month: string = "Agosto";
+let signozodiaco: string = zodiac(day, month);
 console.log(signozodiaco);
+
+
 //3. Realizar un procedimiento que dado el nombre de un país te imprima en qué continente
 //estás. (Max 5 países por continente).
 //La cabecera del procedimiento tendrá el siguiente aspecto: function continent(country)
-function continent(country) {
-    var europa = ["España", "Francia", "Alemania"];
-    if (europa.includes(country)) {
+function continent(country: string): string {
+    let europa: string[] = ["España", "Francia", "Alemania"];
+    if (europa.includes(country)){
         return "Europa";
     }
-    var asia = ["India", "Japón", "China"];
-    if (asia.includes(country)) {
+    let asia: string[] = ["India", "Japón", "China"];
+    if (asia.includes(country)){
         return "Asia";
     }
-    var america = ["Canada", "Mexico", "Colombia"];
+    let america: string[] = ["Canada", "Mexico", "Colombia"];
     if (america.includes(country)) {
         return "America";
     }
-    var africa = ["Senegal", "Nigeria", "Madagascar"];
+    let africa: string[] = ["Senegal", "Nigeria", "Madagascar"];
     if (africa.includes(country)) {
         return "Africa";
     }
-    var oceania = ["Australia", "Nueva Zelanda", "Polinesia Francesa"];
+    let oceania: string[] = ["Australia", "Nueva Zelanda", "Polinesia Francesa"];
     if (oceania.includes(country)) {
         return "Oceania";
     }
 }
-var country = "Polinesia Francesa";
-var continente = continent(country);
+
+let country: string = "Polinesia Francesa";
+let continente: string = continent(country);
 console.log(continente);
+
+
 //4.Realizar una función que te imprima por consola el siguiente mensaje:
 //- “El numero es par”, si el numero introducido como parámetro de entrada es par
 //- “El numero es impar”, si el numero introducido como parámetro de entrada es impar
 //5.La cabecera de la función tendrá el siguiente aspecto: function isEven(number)
-function isEven(number) {
+function isEven(number:number): string {
     if (number % 2 == 0) {
         return "El número es par";
-    }
-    else {
+    } else{
         return "El número es impar";
     }
 }
-exports.isEven = isEven;
-var number = 97;
-var elnumero = isEven(number);
+
+let number: number = 97;
+let elnumero: string = isEven(number);
 console.log(elnumero);
+
+export {isEven};
