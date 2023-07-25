@@ -48,12 +48,7 @@ var Mobile = /** @class */ (function () {
     };
     //Crear un nuevo método que imprima por consola todas las características de la clase. 
     Mobile.prototype.allCharact = function () {
-        console.log("The characteristics of the mobile ".concat(this.name, " are: \n"));
-        console.log("Name: ".concat(this.name, " \n"));
-        console.log("Trademark: ".concat(this.trademark, " \n"));
-        console.log("Model: ".concat(this.model, " \n"));
-        console.log("Color: ".concat(this.color, " \n"));
-        console.log("Price: ".concat(this.price));
+        return ("The characteristics of the mobile ".concat(this.name, " are: \n Name: ").concat(this.name, " \n Trademark: ").concat(this.trademark, " \n Model: ").concat(this.model, " \n Color: ").concat(this.color, " \n Price: ").concat(this.price));
     };
     return Mobile;
 }());

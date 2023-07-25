@@ -17,4 +17,13 @@ let myCollection = new MobileCollection(arrayMobiles)
 let coleccionMoviles = myCollection.getMobiles();
 console.log(coleccionMoviles);
 
+//volver a probar metodo getPrice
+console.log(myCollection.getMobiles()[0].getPrice());
 
+//método printCollection que recorra todos los objetos del atributo mobile y los muestre por consola
+let caracteristicasCollection = myCollection.printCollection();
+console.log(caracteristicasCollection);
+
+//método totalPriceCalculation que muestre el precio total de la colección
+let precioCollection = myCollection.getTotalPrice();
+console.log(`Price overall: ${precioCollection}`);

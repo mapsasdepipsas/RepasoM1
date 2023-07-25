@@ -130,18 +130,6 @@ public getPrice(): number{
 
 public allCharact(){ 
 
-    console.log(`The characteristics of the mobile ${this.name} are: \n`) 
-
-    console.log(`Name: ${this.name} \n`)  
-
-    console.log(`Trademark: ${this.trademark} \n`)  
-
-    console.log(`Model: ${this.model} \n`)  
-
-    console.log(`Color: ${this.color} \n`)  
-
-    console.log(`Price: ${this.price}`) 
-
+    return(`The characteristics of the mobile ${this.name} are: \n Name: ${this.name} \n Trademark: ${this.trademark} \n Model: ${this.model} \n Color: ${this.color} \n Price: ${this.price}`) 
 } 
-
 } 
