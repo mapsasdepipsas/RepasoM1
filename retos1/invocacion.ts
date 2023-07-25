@@ -15,28 +15,6 @@ let array1: string[] = ["Casa", "Coche", "Ciudad", "Cesta"]
 let array2: string[] = ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"]
 let array3: string[] = ["Venezuela", "Veneno", "Voltaje"]
 
-function sumacaracteres(array: string): number {
-    let suma = 0;
-    for (let string of array) {
-        suma += add([string]);
-    }
-    return suma;
-}
-
-function paroimpar(suma: number): string {
-    let par = isEven(suma);
-    return par ? 'par' : 'impar';
-}
-
-
-console.log("Array 1");
-let sumaArray1 = sumacaracteres(array1)
-console.log(`Suma de caracteres: ${sumaArray1} - Es ${paroimpar(sumaArray1)}`);
-
-console.log("Array 2");
-let sumaArray2 = sumacaracteres(array2)
-console.log(`Suma de caracteres: ${sumaArray2} - Es ${paroimpar(sumaArray2)}`);
-
-console.log("Array 3");
-let sumaArray3 = sumacaracteres(array3)
-console.log(`Suma de caracteres: ${sumaArray3} - Es ${paroimpar(sumaArray3)}`);
+console.log(isEven(add(array1)));
+console.log(isEven(add(array2)));
+console.log(isEven(add(array3)));
