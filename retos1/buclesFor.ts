@@ -15,8 +15,8 @@ evenNumbers(num);
 //2. Realizar una función que como parámetro de entrada reciba un array y como salida
 //devuelva el array revertido. No se puede utilizar el método revert de la clase array
 //La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)
-function myRevert<T>(myArr: T[]): T[] {
-    let arrayRevertido: T[] = [];
+function myRevert(myArr: any): any[] {
+    let arrayRevertido: any[] = [];
     for (let item = myArr.length - 1; item >= 0; item--) {
         arrayRevertido.push(myArr[item]);
     }
